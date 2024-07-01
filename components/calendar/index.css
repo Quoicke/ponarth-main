@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.vanilla-calendar-header__content{
+    flex-grow: 0 !important;
+    padding: 0 !important;
+}
+.vanilla-calendar-content{
+    position: relative !important;
+}
+.vanilla-calendar-arrow_prev{
+    position: absolute !important;
+    bottom:40% !important;
+    z-index: 10 !important;
+    left: -10%;
+}
+
+.vanilla-calendar-arrow_next{
+    position: absolute !important;
+    bottom:40% !important;
+    z-index: 10 !important;
+    right: -10%;
+}
+#calendar{
+    width: 320px !important;
+}
+.vanilla-calendar-days{
+    row-gap: 10px !important;
+}
+.vanilla-calendar-day__btn{
+    margin-top: 0 !important;
+    padding: 0 !important; 
+    min-height: 0 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px !important;
+    aspect-ratio: 1/1 !important;
+    width: 0 !important;
+    border-radius: 16px !important;
+}
+.vanilla-calendar-day__btn_selected{
+    background-color: var(--back) !important;
+}
+.calendar-time{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+#calendar-button{
+    background:transparent;
+    border:none;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    width: 40px;
+    height: 36px;
+    border-radius:16px
+}
+
+#calendar-button:hover{
+    background: var(--back);
+    border:none;
+}
+
+#submitButton:disabled{
+    display: none;
+}
+
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .modal-text {
+    text-align: center;
+    color: #030303;
+    font-size: 24px;
+    font-family: "Roboto";
+    line-height: 31px;
+  }
+  

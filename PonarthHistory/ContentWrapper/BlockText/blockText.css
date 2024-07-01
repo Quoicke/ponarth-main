@@ -1,0 +1,90 @@
+.text {
+   display: flex;
+   justify-content: center;
+   width: auto;
+   height: auto;
+   margin: 10%;
+
+
+   color: #393939;
+   /* 10% от viewport */
+   /* font-weight: 300;
+   line-height: 52px; */
+
+}
+
+.text_line{
+   /* border-top:2px solid #d3d3d3 ; */
+   border-bottom:2px solid #d3d3d3 ;
+   width: 40%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   padding: 5%;
+   margin: 5%;
+   
+}
+
+
+.back_img{
+   background-image: url(../../img/Image\ \(6\).png);
+   height: 1000px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   max-width: 1440px;
+}
+
+.sticky-text {
+   color: #ffffff;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 30%;
+   margin: 0 auto;
+   padding: 10%;
+ }
+
+ .back_img_two{
+   background-image: url(../../img/image\ \(102\).jpeg);
+   height: 1000px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+ .back_img_tree{
+   background-image: url(../../img/image\ \(12\).jpeg);
+   height: 1000px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+ h2{
+   color: #393939;
+  font-size: 5vh;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 52px;
+  text-align: justify;
+ }
+ h1{
+color: #030303;
+  font-size: 6vh;
+  font-family: "Roboto";
+  line-height: 62px;
+  font-weight: normal;
+ }
+ @media only screen and (max-width: 1025px) {
+  h2{
+    font-size: 20px; /* Уменьшаем размер шрифта на мобильных устройствах */
+    line-height: 22px;
+  }
+
+  h1 {
+    font-size: 24px; /* Уменьшаем размер шрифта на мобильных устройствах */
+    line-height: 32px;
+  }
+  
+}
+ 

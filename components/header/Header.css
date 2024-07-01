@@ -1,0 +1,121 @@
+/* first_page header */
+header {
+  width: 20%;
+  height: 110vh;
+  border-radius: 2px;
+  box-shadow: 2px 0px 10px rgba(3, 3, 3, 0.1);
+  top: 0;
+  left: 0;
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.93);
+}
+
+@media only screen and (max-width: 1025px) {
+  header {
+    overflow: hidden;
+    width: 0;
+  }
+  .header_menu {
+    overflow-x: hidden;
+    width: 0;
+  }
+  .right_menu{
+    overflow-x: hidden;
+    width: 0;
+  }
+  .block_image{
+    max-width: 1024px;
+    width: 1023px !important;
+  }
+
+
+}
+
+.header_menu {
+  display: grid;
+  gap: 20px;
+  height: auto;
+}
+
+.all_menu {
+  display: grid;
+  gap: 30%;
+  position: sticky;
+  top: 96px;
+  left: 0;
+  width: 189px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: auto;
+  min-height: 150px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: cover;
+  background-image: url(../img/PonarthLogoBlack.png);
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform:scale(1.05);
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+}
+
+.social_circle1:hover {
+  background-image: url(../img/ponarthColor.png);
+}
+.social_circle2:hover {
+  background-image: url(../img/vkColor.png);
+}
+.social_circle3:hover {
+  background-image: url(../img/tgColor.png);
+}
+
+.social_circle1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/ponarthBlack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.social_circle2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/vkBlack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.social_circle3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../img/tgBlack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.headerButton {
+  transition: 0.1s ease-in-out;
+}
+.headerButton:hover {
+  color: rgb(157, 20, 20);
+  font-weight: bold;
+  /* font-size: 20px; */
+}

@@ -1,0 +1,170 @@
+/* first_page right_menu */
+
+.right_menu {
+  width: 5%;
+  height: 110vh;
+  border-radius: 2px;
+  box-shadow: 2px 0px 10px rgba(3, 3, 3, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 1px;
+  padding-top: 96px;background-color: rgba(255, 255, 255, 0.93);
+}
+
+.account {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-image: url(../img/profile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+ margin-bottom: 25px;
+}
+
+.night_light_mode {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-image: url(../img/brightness_6\ \(2\).svg);
+  background-color: rgba(240, 248, 255, 0);
+  margin: 0 auto;
+  transition: 0.3s ease-in-out;
+}
+.night_light_mode:hover{
+  background-color: none;
+}
+
+.text_slide_seven_page {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  font-weight: bolder;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+.element_menu {
+  position: sticky;
+  top: 1%;
+  left: 0;
+  height: 580px;
+}
+.expand_less {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-image: url(../img/expand_less.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.expand_less:hover{
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
+  transform:scale(1.1);
+}
+
+/* Стили для светлой темы */
+.light-theme {
+  background-color: #ffffff; /* белый фон */
+  color: #000000; /* черный цвет текста */
+}
+
+/* Стили для темной темы */
+.dark-theme {
+  color: white !important; /* белый цвет текста */
+}
+
+/* Стили для элемента с классом "header" в темной теме */
+.dark-theme header {
+  background-color:rgba(0, 0, 0, 0.832);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.93);
+  color: white; /* белый цвет текста для заголовка */
+}
+
+/* Стили для элемента с классом "content" в темной теме */
+.dark-theme .content {
+  background-color:rgba(0, 0, 0, 0.832);
+  color: white; /* белый цвет текста для контента */
+}
+
+/* Стили для элемента с классом "right" в темной теме */
+.dark-theme .right_menu {
+  background-color:rgba(0, 0, 0, 0.832);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.93);
+  color: white; /* белый цвет текста для правой части */
+}
+
+/* Стили для элемента с классом "menu" в темной теме */
+.dark-theme .menu_menu {
+  background-color:rgba(0, 0, 0, 0.832);
+  color: white; /* темный цвет фона для меню */
+}
+
+.dark-theme .all_items_footer{
+  background-color:rgb(0, 0, 0);
+  box-shadow: 2px -2px 10px  rgba(255, 255, 255, 0.93);;
+  color: white !important;
+}
+
+.dark-theme .wrapper{
+  background-color:rgb(0, 0, 0);
+  color: white;
+}
+.dark-theme .logo{
+  width: auto;
+  height: 100px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: cover;
+  background-image: url(../img/logo_white_mini.png) ;
+}
+.dark-theme .logo_footer{
+  background-image: url(../img/logo_white_mini.png);
+  background-size: cover;
+  width: 130px;
+  height: 100px;
+}
+.dark-theme .night_light_mode {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-image: url(../img/brightness_medium.svg);
+  background-color: rgba(240, 248, 255, 0);
+  margin: 0 auto;
+
+}
+.dark-theme .expand_less {
+  background-image: url(../img/expand_less_white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:rgba(240, 248, 255, 0);
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.93);
+}
+
+.dark-theme h1{
+color: white;
+}.dark-theme h2{
+  color: white;
+}.dark-theme h3{
+  color: white;
+}.dark-theme p{
+  color: white !important; 
+}.dark-theme a{
+  color: white;
+}.dark-theme a:hover{
+  color: rgb(157, 20, 20);
+}
+.dark-theme .headerButton:hover{
+  color: rgb(157, 20, 20) !important;
+}
+.dark-theme button{
+  color: black;
+}
+
+

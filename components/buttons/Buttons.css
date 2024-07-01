@@ -1,0 +1,21 @@
+.btn_black {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_white {
+    background-color: #ffffff6e;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: end;
+}
+
+.btn_white:hover{
+    background-color: rgb(0, 0, 0);
+}

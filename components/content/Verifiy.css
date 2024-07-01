@@ -1,0 +1,329 @@
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 1.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-ban-circle:before {
+  content: "\02298";
+  content: "\02296";
+}
+
+html {
+  opacity: 0;
+}
+body.av-unresolved,
+html.av-unresolved {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: opacity 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: opacity 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: opacity 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+}
+body.av-resolved,
+html.av-resolved {
+  opacity: 1;
+}
+body.av-hidden,
+html.av-hidden {
+  opacity: 1;
+  height: auto;
+}
+#av-wrap * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#av-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  color: #fff;
+  background: center/cover #00bd9b;
+  font-family: Lato, sans-serif;
+  transition: opacity 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: opacity 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: opacity 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+  overflow-y: auto;
+}
+#av-inner-scroll-wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+#av-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#av-content {
+  display: inline-block;
+  max-width: 600px;
+  padding: 0 10px;
+}
+#av-title {
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin: 20px 0;
+}
+#av-text {
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+}
+#av-submit {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  margin: 20px 0;
+  width: 220px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  line-height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#av-submit:hover {
+  opacity: 0.85;
+}
+#av-submit:active {
+  opacity: 1 !important;
+  -webkit-transform: scale3d(0.85, 0.85, 0.85);
+  transform: scale3d(0.85, 0.85, 0.85);
+}
+#av-form {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 20px 0;
+  display: inline-block;
+}
+#av-error-inner {
+  top: 0;
+  font-weight: 300;
+  line-height: 24px;
+}
+#av-error-icon {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 10px;
+}
+#av-error-icon-image {
+  position: absolute;
+  left: -4px;
+  top: -8px;
+  width: 24px;
+  height: 24px;
+}
+#av-error {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: height 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: height 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+}
+#av-error.av-error-visible {
+  height: 30px;
+}
+#form-birthday {
+  display: inline-block;
+  height: 80px;
+  border-radius: 80px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+}
+#form-birthday-inner {
+  height: 60px;
+  width: 100%;
+  border-radius: 60px;
+}
+.birthday-select-wrap {
+  background: #fff;
+  margin: 0 1px 0 0;
+  width: 125px;
+  height: 100%;
+  float: left;
+}
+.birthday-select-wrap.av-first {
+  border-radius: 100px 0 0 100px;
+}
+.birthday-select-wrap.av-last {
+  margin: 0;
+  border-radius: 0 100px 100px 0;
+}
+.chosen-container {
+  height: 100%;
+}
+.chosen-container .chosen-single {
+  height: 100% !important;
+  border: 0;
+  background: 0 0;
+  box-shadow: none;
+}
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 0;
+  background: #fff;
+  box-shadow: none;
+}
+.chosen-container .chosen-single span {
+  font-size: 16px;
+  line-height: 60px;
+}
+.chosen-container .chosen-drop,
+.chosen-drop {
+  background: #fff;
+  border: 0;
+  box-shadow: none;
+}
+.chosen-container-single .chosen-single div b {
+  background: url(//selectoil.com/wp-content/plugins/age-verifier/css/../img/chosen/chosen-sprite.png)
+    2px 21px no-repeat;
+}
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  background-position: -16px 21px;
+}
+#form-age {
+  width: 100%;
+}
+#field-age {
+  font-size: 48px;
+  margin: 0 0 20px;
+}
+#slider-age-wrap {
+  width: 100%;
+  height: 30px;
+  border-radius: 80px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  cursor: pointer;
+}
+#slider-age {
+  position: relative;
+  border-radius: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#slider-age-bar {
+  position: relative;
+  border-radius: 10px;
+  height: 100%;
+  width: 33%;
+}
+#slider-age-handle {
+  position: absolute;
+  left: 100%;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-top: -10px;
+  margin-left: -15px;
+  transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  transition: all 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: all 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: all 0.33s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.slider-dragging #slider-age-handle {
+  transform: scale3d(1.5, 1.5, 1.5);
+  -moz-transform: scale3d(1.5, 1.5, 1.5);
+  -webkit-transform: scale3d(1.5, 1.5, 1.5);
+}
+#form-confirm {
+  line-height: 24px;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+#form-confirm-text {
+  display: inline-block;
+  font-size: 24px;
+}
+#form-confirm-checkbox {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background: #fff;
+  margin-right: 10px;
+  position: relative;
+}
+#form-confirm-checkbox:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 4px;
+  top: 4px;
+  background: #333;
+  border-radius: 3px;
+  transform: scale3d(0, 0, 0);
+  -moz-transform: scale3d(0, 0, 0);
+  -webkit-transform: scale3d(0, 0, 0);
+  transition: all 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: all 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+}
+#form-confirm-checkbox.form-confirm-checkbox-checked:before {
+  transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+}
+@media (max-width: 500px) {
+  #form-birthday {
+    background: 0 0;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .birthday-select-wrap {
+    width: 33% !important;
+  }
+}
+.av-animation-pop-in .av-content-node {
+  transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.av-animation-pop-in .av-unresolved-content {
+  transform: scale3d(0, 0, 0);
+  -moz-transform: scale3d(0, 0, 0);
+  -webkit-transform: scale3d(0, 0, 0);
+}
+.av-animation-slide .av-content-node {
+  transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear;
+  -webkit-transition: all 0.35s linear;
+}
+.av-animation-slide .av-unresolved-content {
+  transform: translate3d(0, -1000px, 0);
+  -moz-transform: translate3d(0, -1000px, 0);
+  -webkit-transform: translate3d(0, -1000px, 0);
+}

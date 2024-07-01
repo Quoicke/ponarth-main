@@ -1,0 +1,129 @@
+header {
+  min-width: 375px;
+  width: 30%;
+  height: 50px;
+  display: grid;
+  grid-template-columns:auto auto;
+  align-items: center;
+  position: sticky;
+  top: 1px;
+}
+
+
+.circle {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.16);
+  border-radius: 50%;
+}
+.circle1 {
+  min-width: 40px;
+  min-height: 40px;
+  margin: 1%;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+#navbar {
+  display: flex; /* Начально скрываем меню */
+  position: absolute;
+  left: -500px;
+  transition: transform 0.3s ease-in-out; /* Плавное изменение положения */
+  transform: translateX(0); /* Начальное положение (выезжание из кнопки меню) */
+  margin: 0 auto;
+}
+
+#navbar.active {
+  transform: translateX(570px); /* Показываем меню справа при активном классе */
+}
+
+#menu-toggle {
+  transition: transform 0.3s ease-in-out; /* Добавляем анимацию transform */
+}
+
+#menu-toggle.active {
+  transform: scaleX(-1); /* Отражаем кнопку при активном классе */
+}
+
+.circle:hover {
+  background-color: rgb(232, 222, 222);
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+menu a {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+}
+
+.menu_two{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 209px;
+  height: 40px;
+  align-items: center;
+  background-color: #c2c2c267;
+  border-radius:100px;
+}
+
+.menu_tree{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 128px;
+  align-items: center;
+  background-color: #c2c2c267;
+  border-radius:100px;
+  margin-left: 32px;
+  height: 40px;
+}
+.social_circle1:hover{
+  background-image: url(../../components/img/ponarthColor.png);
+}
+.social_circle2:hover{
+  background-image: url(../../components/img/vkColor.png);
+}
+.social_circle3:hover{
+  background-image: url(../../components/img/tgColor.png);
+}
+
+
+.social_circle1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../../components/img/ponarthBlack.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  transition:  0.5s ease-in-out;
+  cursor:  pointer;
+}
+.social_circle2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../../components/img/vkBlack.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  transition:  0.5s ease-in-out;
+  cursor:  pointer;
+}
+.social_circle3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../../components/img/tgBlack.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  transition:  0.3s ease-in-out;
+  cursor:  pointer;
+}
+

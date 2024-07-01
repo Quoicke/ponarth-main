@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ContentWrapper/contentWrapper.css">
+  <link rel="stylesheet" href="ContentWrapper/BlockImg/blockImg.css">
+  <link rel="stylesheet" href="ContentWrapper/BlockText/blockText.css">
+  <link rel="stylesheet" href="Header/header.css">
+  <link rel="stylesheet" href="Header/menu/menu.css">
+  <link rel="stylesheet" href="Header/header.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/.css">
+  <link rel="stylesheet" href="ContentWrapper/Slider/slider.js">
+  <link rel="stylesheet" href="ContentWrapper/Slider/slider.css">
+  <link rel="stylesheet" href="ContentWrapper/MenuRight/menu.css">
+  <link rel="stylesheet" href="ContentWrapper/Calendar/celendar.css">
+  <link rel="stylesheet" href="ContentWrapper/Calendar/calendar.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../calendar/vanilla-calendar.layout.min.css" />
+  <link rel="stylesheet" href="../calendar/vanilla-calendar.min.css" />
+  <script src="../calendar/vanilla-calendar.min.js"></script>
+  <link rel="stylesheet" href="../components/calendar/index.css" />
+
+  <link rel="stylesheet" href="Player/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Ponarth History</title>
+</head>
+
+<body>
+  <audio id="myAudio" style="position: fixed; width: 40px; height: 40px;">
+    <source src="../1й абзац.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <header>
+    <!-- кнопка -->
+    <a class="circle" id="menu-toggle">
+      <img src="Header/menu/img/chevron_right.svg" alt="">
+    </a>
+    <!-- меню -->
+    <nav id="navbar">
+
+      <div class="menu_two">
+        <a class="circle" href="../index.html">
+          <img style="border-radius: 20px;" src="../components/img/image (2).jpeg" alt="">
+        </a>
+        <a style="margin: 0 auto;" href="" target="_blank">
+          <div class="social_circle1"></div>
+        </a>
+        <a style="margin: 0 auto;" href="https://vk.com/ponarth" target="_blank">
+          <div class="social_circle2"></div>
+        </a>
+        <a style="margin: 0 auto; width: 30px;" href="https://t.me/ponarth_1849" target="_blank">
+          <div class="social_circle3"></div>
+        </a>
+      </div>
+
+      <div class="menu_tree">
+        <a class="circle1" href=""><img class="circle" src="ContentWrapper/MenuRight/img/headset_mic.svg" alt=""></a>
+        <a class="circle1" href=""><img class="circle" src="ContentWrapper/MenuRight/img/brightness_6.svg" alt=""></a>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <!-- content  -->
+  <div class="content_wrapper">
+
+    <div>
+      <!-- добавил плеер -->
+      <div class="aWrap" data-src="../1й абзац.mp3">
+        <button class="aPlay" disabled><span class="aPlayIco"><i class="fa fa-play"></i></span></button>
+        <div style="display: flex; align-items: center;">
+          <div class="range">
+            <span class="under-ranger"></span>
+            <input class="aSeek" type="range" min="0" value="0" step="1" disabled><span class="change-range"></span>
+          </div>
+          <div class="aCron">
+            <span class="aNow"></span> / <span class="aTime"></span>
+          </div>
+
+        </div>
+        <div class="volume-container">
+          <span class="aVolIco"><i class="fa fa-volume-up"></i></span>
+          <div class="range-volume">
+            <span class="under-ranger"></span>
+            <input class="aVolume" type="range" min="0" max="1" value="1" step="0.1" disabled><span
+              class="change-range"></span>
+          </div>
+        </div>
+      </div>
+      <!-- конец плеера -->
+      <div class="text">
+        <h2>Крупнейшей пивоваренной компанией в довоенной Восточной Пруссии был кёнигсбергский пивзавод
+          «Понарт»,
+          основанный Иоганном Филиппом Шиффердеккером 15 ноября 1839 года. Понарт - это прусская деревушка,
+          основанная более 600 лет тому назад.
+        </h2>
+      </div>
+    </div>
+
+
+
+
+    <img src="img/Image (10).png" alt="">
+
+
+    <!-- Добавил айди -->
+    <div class="text" id="afterWar">
+      <h2>
+        После военного конфликта с Польшей, угрозы со стороны шведов и вторжения французов, кажется,
+        неприятности оставили деревню. В 1849 году в Понарт переместилась пивоварня Филиппа Шифердеккера,
+        что
+        весьма способствовало экономическому и культурному развитию пригорода.
+      </h2>
+    </div>
+
+
+
+
+
+    <img src="img/Image (4).png" alt="">
+
+
+
+    <div class="text">
+      <h2>
+        Население Понарта к 1900 году достигло 8000 человек. В 1905 году Понарт объединился с Кенигсбергом.
+        Прекрасный пруд Шванен (Лебединый, а ныне Летний), ресторан Зюд-парк дополняли картину в сочетании с
+        изобилием пенистого напитка.
+      </h2>
+    </div>
+
+
+
+
+
+    <img src="img/Image (5).png" alt="">
+
+    <div class="img_grid">
+      <img src="img/Image (6).png" alt="">
+      <img src="img/Image (7).png" alt="">
+    </div>
+
+    <h1 class="text_line">
+      УЛОЧКИ ПОНАРТА <br>НАЧАЛО XX ВЕКА
+    </h1>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/image (1).jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/image.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/image (2).jpeg" alt=""></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+
+    <div class="excursion">
+
+      <div class="content_tree_page">
+        <p>
+          Каждый вторник, среду и четверг <br>
+          12.00 15.00. 19.00
+        </p>
+      </div>
+
+      <div class="karusel">
+
+
+
+        <div class="calendar_card">
+
+          <div class="label">
+            <form id="zabron">
+
+              <div id="calendar"></div>
+
+              <input type="text" id="userName" name="userName" placeholder="Введите имя" required />
+
+              <input type="tel" id="phoneNumber" max="11" name="phoneNumber" placeholder="Контактный номер телефона"
+                required />
+
+              <input type="number" id="quantity" name="quantity" value="1" min="1" max="10"
+                placeholder="Количество персон (макс 10)" required />
+
+              <button type="submit" id="submitButton" disabled>Забронировать</button>
+            </form>
+          </div>
+        </div>
+        <div class="slides">
+          <div id="slide-1">
+            <img style="height: 80%; width: auto; border-radius: 10px; padding-bottom: 7%;"
+              src="../components/img/Image (22).png" alt="">
+            <p class="text_slide_tree_page">#Знакомство с культурным
+              наследием
+            </p>
+          </div>
+          <div id="slide-2">
+            <img style="height: 80%; width: auto; border-radius: 10px; padding-bottom: 7%;"
+              src="../components/img/Image (21).png" alt="">
+            <p class="text_slide_tree_page">#Рецептуры довоенной Восточной Пруссии
+            </p>
+          </div>
+          <div id="slide-3">
+            <img style="height: 80%; width: auto; border-radius: 10px; padding-bottom: 7%;"
+              src="../components/img/Ljyt7AADowk.jpg" alt="">
+            <p class="text_slide_tree_page">#8 дегустационных сортов лимонада</p>
+          </div>
+          <div id="slide-4">
+            <img style="height: 80%; width: auto; border-radius: 10px; padding-bottom: 7%;"
+              src="../components/img/Ljyt7AADowk.jpg" alt="">
+            <p class="text_slide_tree_page">#8 дегустационных сортов лимонада</p>
+          </div>
+          <div id="slide-5">
+            <img style="height: 80%; width: auto; border-radius: 10px; padding-bottom: 7%;"
+              src="../components/img/Ljyt7AADowk.jpg" alt="">
+            <p class="text_slide_tree_page">#8 дегустационных сортов лимонада</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- <div class="text">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide slide-1">
+                        <img src="img/image (62).jpeg" alt="Изображение 1">
+                      </div>
+                      <div class="swiper-slide slide-2">
+                        <img src="img/Image (8).png" alt="Изображение 2">
+                      </div>
+                      <div class="swiper-slide slide-3">
+                        <img src="img/Image (9).png" alt="Изображение 3">
+                      </div>
+                    </div>
+                  </div>
+            </div> -->
+
+    <div class="block">
+      <h1 class="text_line">
+        САМАЯ БОЛЬШАЯ ПИВОВАРНЯ В ВОСТОЧНОЙ ПРУССИИ
+      </h1>
+
+      <img src="img/Image (9).png" alt="">
+    </div>
+
+
+
+
+
+    <div class="text">
+      <h2>Сам Шиффердеккер происходил из старого рода, зaнимавшегося пивоварением с XII века, ведущего
+        свою историю из города Мосбаха в Баварии. Его дядя с 1804 года работал в кенигсбергской винной
+        фирме «Кох и Рихтер», ведшей хозяйство в ресторане «Блютгерихт». Так в конце 1839 года Иоганн
+        попал в Кенигсберг и принес с собой баварское пиво, бывшее в Восточной Пруссии в новинку. Его
+        дядя уже заранее позаботился о приобретении земельного участка в Лёбенихте на улице
+        Тухмахерштрассе (по-русски – «улица суконщиков»), где уже стояли пивной заводик и жилой дом,
+        построенные в 1815 году.
+      </h2>
+    </div>
+
+
+
+
+    <div class="back_img">
+      <h2 class="sticky-text">В 28 лет Иоган уже был солидным владельцем пивоварни. Очень скоро подвалы в Лёбенихте
+        стали слишком тесны, и с 1842 года были арендованы просторные подвалы под Замковой кирхой.
+      </h2>
+    </div>
+
+    <div class="text">
+      <h2>2 августа 1849 года в имении Понарт Шиффердеккер приобрел большой участок в 260 моргенов земли за
+        15
+        тысяч талеров, и сразу же началось строительство подвалов. Вскоре была построена пивоварня,
+        отвечающая всем самым современным требованиям того времени. Для получения воды для льда рядом с
+        заводом были сделаны два пруда: Schwanenteich и Hubertusteich (сейчас – озера Пеньковое и Лебяжье).
+      </h2>
+    </div>
+
+
+
+
+
+    <img class="block_img" src="img/daf.png" alt="">
+
+    <div class="info">
+
+      <img class="info_img" src="img/image (132).jpeg" alt="">
+
+      <h2 class="text" style="margin: 0 auto; ">Поскольку дети основателя пивоварни не желали заниматься пивоварением,
+        его брат Эдуард совместно
+        с
+        рядом кёнигсбергских коммерсантов основал коммандитное общество «Пивоварня Понарт Э. Шиффедеккер и
+        Ко», которое в 1869 году выкупило производство.
+      </h2>
+    </div>
+
+
+
+
+    <div class="block_img">
+
+      <img src="img/image (142).jpeg" alt="">
+
+    </div>
+
+
+    <div class="text">
+      <h2>Эдуард Шиффердеккер оставался техническим директором и после того, как предприятие 11 ноября 1888
+        года стало акционерным. Основатель, Иоганн Филипп Шиффердеккер, был членом наблюдательного совета
+        вплоть до своей смерти 1 октября 1887 года.
+      </h2>
+    </div>
+
+
+
+    <div class="info">
+
+      <h2 class="text"> Для устранения дефицита жилья в 1871 году было построено два жилых дома общим объёмом в 32
+        квартиры.</h2>
+
+      <img src="img/image (42).jpeg" style="margin: 0 auto;">
+    </div>
+
+
+
+
+    <div class=" text">
+      <h2> Когда не было больше возможности расширять мощности, практически тот же состав владельцев «Понарта»
+        основал «Акционерную пивоварню Шёнбуш», построенную в 1871 году.</h2>
+    </div>
+
+
+    <div class="block_img">
+      <img src="img/image (52).jpeg" alt="">
+    </div>
+    <!-- конец контента -->
+    <div class="text">
+      <h2> Для продажи пива за пределы Восточной Пруссии в 1888 году к заводу была проведена железнодорожная ветка к
+        Остбану (Ostbahn – Восточная железная дорога Германии) </h2>
+    </div>
+
+
+
+    <div class="img_grid">
+      <img src="img/Image (32).png" alt="">
+      <img src="img/Image (43).png" alt="">
+    </div>
+
+
+
+    <div class="text">
+      <h2> Для реализации пива в Кёнигсберге пользовались специальными повозками с маркировкой пивоварни. </h2>
+    </div>
+
+
+
+
+    <div class="block_img">
+      <img src="img/image (62).jpeg" alt="">
+    </div>
+
+
+    <div class="info">
+
+      <h2 class="text"> Для рекламы продукции на территории зоопарка существовал специальный павильон, кроме того, было
+        открыто
+        торговое
+        заведение типа закусочной на территории пивоварни, существовала небольшая сеть собственных баров на территории
+        Кёнигсберга </h2>
+
+      <img class="info_img" src="img/image (72).jpeg" alt="">
+
+      <img class="info_img" src="img/image (82).jpeg" alt="">
+
+      <h2 class="text">
+        Реклама Мартовского пива Оно славилось в северо-восточной Германии и вывозилось в огромных объемах
+      </h2>
+
+      <h2 class="text">Для собственной розничной торговли недалеко от пивоварни был оборудован кабачок
+        «Gambrinus-Halle».
+        Потребление
+        все увеличивалось, и уже было трудно справиться со всеми заказами. Так появился план перенести производство за
+        город.</h2>
+
+      <img class="info_img" src="img/image (92).jpeg" alt="">
+    </div>
+
+
+
+
+    <div class="back_img_two">
+      <h2 class="sticky-text">В 28 лет Иоган уже был солидным владельцем пивоварни. Очень скоро подвалы в Лёбенихте
+        стали слишком тесны, и с 1842 года были арендованы просторные подвалы под Замковой кирхой.
+      </h2>
+    </div>
+
+    <div class="text">
+      <h2>2 августа 1849 года в имении Понарт Шиффердеккер приобрел большой участок в 260 моргенов земли за
+        15
+        тысяч талеров, и сразу же началось строительство подвалов. Вскоре была построена пивоварня,
+        отвечающая всем самым современным требованиям того времени. Для получения воды для льда рядом с
+        заводом были сделаны два пруда: Schwanenteich и Hubertusteich (сейчас – озера Пеньковое и Лебяжье).
+      </h2>
+    </div>
+
+
+
+    <div class="info">
+      <img src="img/image (11).jpeg" alt="">
+
+      <h1 class="text">
+        В юбилейном 1939 году пивоварня со штатом 500 человек была крупнейшей в северо-восточной Германии. В 1906 году в
+        честь основателя знаменитой пивоварни в Понарте назвали улицу (сейчас ул. маршала Новикова).
+
+      </h1>
+    </div>
+
+
+
+
+    <div class="back_img_tree">
+      <h2 class="sticky-text">За столетие на пивоварне сложились свои традиции, наприме, ежегодгные выборы "Пивного
+        Короля" из числа лучших мастеров-пивоваров.
+        <br>
+        Эта традиция, вместе с рецептурами, сохранилась и по сей день.
+      </h2>
+    </div>
+
+
+
+    <div class="text">
+      <h2>Пастор, председатель общины, рабочие железнодорожной мастерской и многие другие каждую неделю
+        получали свою восьмую часть тонны пива в виде монет номиналом 1 литр
+      </h2>
+    </div>
+
+
+
+    <div class="block_img">
+      <img src="img/image (13).jpeg" alt="">
+    </div>
+
+
+    <div class="text">
+      <h2>
+        С началом Первой мировой войны оборот значительно снизился. Уже второй после 1885 года пожар
+        случился 28 июня 1918 года и нанес колоссальный урон, что очень затруднило восстановление.
+
+      </h2>
+    </div>
+
+
+
+
+    <div class="block_img">
+      <img src="img/image (14).jpeg" alt="">
+    </div>
+
+    <div class="block_text">
+
+      <h2 class="text_line">
+        НОВЫЕ ХОЗЯЕВА -
+        СОВЕТСКИЙ ПЕРИОД
+      </h2>
+
+    </div>
+
+    <div class="block_img">
+
+      <img src="img/image (15).jpeg" alt="">
+
+    </div>
+
+    <div class="text">
+      <h1>
+        После второй мировой войны город Кёнигсберг включен в состав СССР и переименован в Калининград. На территории
+        пивзавода «Понарт» основан «Калининградский пивкомбинат №2». , который первые послевоенные годы завод производил
+        только солод.
+
+      </h1>
+    </div>
+
+
+
+    <div class="text">
+      <h1>
+        После развала Советского Союза производственные мощности переходили из рук в руки, при этом производство
+        фактически было остановлено. Помещения пивоварни пришли в запустение, что привело к их частичному разрушению.
+      </h1>
+    </div>
+
+
+
+
+
+    <h1 class="text_line">
+      СОХРАНЯЯ СТАРИННЫЕ ТРАДИЦИИ ПИВОВАРЕНИЯ
+    </h1>
+
+
+    <div class="block_img">
+      <img src="img/image (16).jpeg" alt="">
+    </div>
+
+    <div class="text">
+      <h1>
+        Новая история Понарта началась с приходом новой команды весной 2010 года. Молодой энтузиаст и предприниматель из
+        Калининграда - Путятинский Ренат Валерьевич, нашел инвесторов и восстановил часть подвальных помещений пивоварни
+        "Понарт".
+      </h1>
+    </div>
+
+
+
+    <video class="block_img" src="ContentWrapper/Video/pexels-cottonbro-5538281 (2160p).mp4" controls>
+      <source src="your-video.mp4" type="video/mp4">
+      <source src="your-video.webm" type="video/webm">
+    </video>
+
+
+    <div class="text">
+      <h1>Сейчас на пивоварне варят пиво по старинной немецкой рецептуре, используя пивоваренный солод
+        высокого качества,
+        лучшие сорта хмеля, элитные культуры пивных дрожжей и воду из понартовских артезианских скважин.
+
+      </h1>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  
+  <script>document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll(".slider-image");
+      let currentIndex = 0;
+
+      function showImage(index) {
+        images.forEach((image, i) => {
+          if (i === index) {
+            image.classList.add("active");
+          } else {
+            image.classList.remove("active");
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+      }
+
+      setInterval(nextSlide, 5000);
+    });
+  </script>
+
+  <script src="../components/calendar/index.js"></script>
+  <script src="ContentWrapper/Calendar/calendar.js"></script>
+  <script src="Header/menu/menu.js"></script>
+  <script src="ContentWrapper/slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="Player/index.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/.js"></script>
+  <script src="script.js"></script> -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+
+</html>
