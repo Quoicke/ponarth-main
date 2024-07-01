@@ -29,7 +29,7 @@ function load(count = 10, offset = 0) {
           imageDiv.style.backgroundPosition = "center center";
           imageDiv.style.backgroundSize = "cover";
           imageDiv.style.backgroundRepeat = "no-repeat";
-          imageDiv.style.marginBottom = "24px"; // Добавляем отступ снизу к изображению
+          imageDiv.style.margin = "24px"; // Добавляем отступ снизу к изображению
 
           // Проверяем наличие копии поста
           if (post.copy_history && post.copy_history.length > 0) {

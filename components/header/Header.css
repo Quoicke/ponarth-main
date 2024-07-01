@@ -3,33 +3,51 @@ header {
   width: 20%;
   height: 110vh;
   border-radius: 2px;
-  box-shadow: 2px 0px 10px rgba(3, 3, 3, 0.1);
   top: 0;
   left: 0;
   position: sticky;
-  background-color: rgba(255, 255, 255, 0.93);
+  /* background-color: rgba(255, 255, 255, 0.93); */
 }
+
 
 @media only screen and (max-width: 1025px) {
-  header {
-    overflow: hidden;
-    width: 0;
+  header,.right_menu {
+    display: none;
   }
-  .header_menu {
-    overflow-x: hidden;
-    width: 0;
+  .footerButton{
+    justify-content: center;
+    text-align: center;
   }
-  .right_menu{
-    overflow-x: hidden;
-    width: 0;
+  .menu_toggle {
+    display: block !important;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
   }
-  .block_image{
-    max-width: 1024px;
-    width: 1023px !important;
-  }
-
-
 }
+
+/* .header.show,
+  .right_menu.show {
+    display: flex !important;
+  }
+
+.content.header.show {
+  width: 70%;
+}
+
+.menu_toggle {
+  display: none;
+} */
+
+
+
+
+
 
 .header_menu {
   display: grid;

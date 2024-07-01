@@ -31,8 +31,8 @@
   <script src="calendar/vanilla-calendar.min.js"></script>
   <link rel="stylesheet" href="components/calendar/index.css" />
   <link rel="stylesheet" href="components/buttons/ButtonZaebix.css" />
-  <link rel="stylesheet" href="components/content/Verifiy.css" />
-  <link rel="stylesheet" href="components/content/Verifiy.css" />
+  <link rel="stylesheet" href="components/content/map.css">
+  <!-- <link rel="stylesheet" href="components/content/Verifiy.css" /> -->
   <title>Ponarth</title>
 </head>
 
@@ -52,15 +52,21 @@
         </div>
 
         <div class="social">
-          <div class="social_circle1">
-            <a href="https://untappd.com/b/brauerei-ponarth-pivovarnya-ponart-pshenichnoe/2206518" target="_blank"></a>
-          </div>
-          <div class="social_circle2">
-            <a href="https://vk.com/ponarth" target="_blank"></a>
-          </div>
-          <div class="social_circle3">
-            <a href="https://t.me/ponarth_1849" target="_blank"></a>
-          </div>
+
+          <a href="https://untappd.com/b/brauerei-ponarth-pivovarnya-ponart-pshenichnoe/2206518" target="_blank">
+            <div class="social_circle1"></div>
+          </a>
+
+
+          <a href="https://vk.com/ponarth" target="_blank">
+            <div class="social_circle2"></div>
+          </a>
+
+
+          <a href="https://t.me/ponarth_1849" target="_blank">
+            <div class="social_circle3"></div>
+          </a>
+
         </div>
       </div>
     </header>
@@ -105,7 +111,7 @@
           <div class="text_slider">
 
             <div class="text_in">
-              <h2 class="gradual-appear">Пиво</h2>
+              <h2 class="gradual-appear">ПИВО</h2>
 
               <p>
                 Пиво классическое. Сварено по рецептам 1849 года только с
@@ -134,12 +140,12 @@
               УЗНАЙТЕ МНОГОВЕКОВУЮ ИСТОРИЮ ПИВОВАРНИЯ С 1839 ГОДА
             </h1>
 
-            <h2 class="litle_text_two" id="litle_text_two">Крупнейшей пивоваренной компанией в довоенной
-              ВосточнойПруссиибыл Кенигсбергский завод "Понарт", основанный ИоганномФилиппом Шиффердеккером 15 ноября
-              1839 года. Сейчас "Понарт" -этолокальное акционерное общество по производству пива вразвитиекоторого
-              можетучаствовать каждый желающий
+            <h2 class="litle_text_two" id="litle_text_two">Крупнейшей пивоваренной компанией в довоенной Восточной
+              Пруссии был Кенигсбергский завод "Понарт", основанный Иоганном Филиппом Шиффердеккером 15 ноября 1839
+              года. Сейчас "Понарт" - это локальное акционерное общество по производству пива, в развитии которого может
+              участвовать каждый желающий
             </h2>
-            <a style="margin: 0 auto; width: 350px" href="PonarthHistory/list1.html">
+            <a style="margin: 0 auto; width: 250px" href="PonarthHistory/list1.html">
               <button class="learn-more">
                 <span class="circle" aria-hidden="true" style="background-color: rgb(0, 0, 0)">
                   <span class="icon arrow"></span>
@@ -158,7 +164,9 @@
             ПОСЕТИТИЕ <br />
             СЕРДЦЕ ПРУССИИ
           </h2>
-          <p>
+          <p style="width: 320px;
+          border-top: 2px solid #d3d3d3;
+          padding-top: 40px; padding-bottom: 40px;">
             Каждый вторник, среду и четверг <br />
             12.00 15.00. 19.00
           </p>
@@ -170,15 +178,23 @@
               <form id="zabron">
                 <div id="calendar"></div>
 
-                <input type="text" id="userName" name="userName" placeholder="Введите имя" required />
+                <div class="form-group">
+                  <input type="text" id="userName" name="userName" placeholder=" " required />
+                  <label for="userName">Введите имя</label>
+                </div>
 
-                <input type="tel" id="phoneNumber" max="11" name="phoneNumber" placeholder="Контактный номер телефона"
-                  required />
+                <div class="form-group">
+                  <input type="tel" id="phoneNumber" maxlength="11" name="phoneNumber" placeholder=" " required />
+                  <label for="phoneNumber">Контактный номер телефона</label>
+                </div>
 
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10"
-                  placeholder="Количество персон (макс 10)" required />
+                <div class="form-group">
+                  <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" placeholder=" "
+                    required />
+                  <label for="quantity">Количество персон (макс 10)</label>
+                </div>
 
-                <button class="learn-more" type="submit" id="submitButton" disabled>
+                <button class="learn-more" type="submit" id="submitButton" disabled style="margin-top: 32px;">
                   <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>
                   </span>
@@ -230,42 +246,55 @@
         </h2>
       </div>
 
-      <div class="content_four_page">
-        <!-- 1я -->
-
-        <div class="txt_four_page">
-          <h1 class="big_text_four_page">01</h1>
-          <p>
-            Только натуральное сырье и<br />
-            качественный продукт
-          </p>
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="txt_four_page">
+            <h1 class="big_text_four_page">01</h1>
+            <p>
+              Только натуральное сырье и<br />
+              качественный продукт
+            </p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="kartinka1">
+            <img class="img_four_end" src="components/img/Image.png" alt="" />
+          </div>
         </div>
 
-        <img class="img_four_end" src="components/img/Image.png" alt="" />
-
-        <!-- 2я -->
-
-        <img class="img_four" src="components/img/Pivo2.png" alt="" />
-
-        <div class="txt_four">
-          <h1 class="big_text_four_right">02</h1>
-          <p class="text_four_right">
-            Всесторонняя поддержка <br />партнеров
-          </p>
+        <div class="grid-item">
+          <div class="kartinka1">
+            <img class="img_four_end" src="components/img/Pivo2.png" alt="" />
+          </div>
         </div>
 
-        <!-- 3я -->
-
-        <div class="txt_four_page">
-          <h1 class="big_text_four_page2">03</h1>
-          <p>
-            14 лет варим вкусное пиво по <br />
-            технологиям 19го века
-          </p>
+        <div class="grid-item">
+          <div class="txt_four">
+            <h1 class="big_text_four_right">02</h1>
+            <p class="text_four_right">
+              Всесторонняя поддержка <br />партнеров
+            </p>
+          </div>
         </div>
 
-        <img class="img_four_end" src="components/img/Pivo3.png" alt="" />
+        <div class="grid-item">
+          <div class="txt_four_page">
+            <h1 class="big_text_four_page2">03</h1>
+            <p>
+              14 лет варим вкусное пиво по <br />
+              технологиям 19го века
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="kartinka1">
+            <img class="img_four_end" src="components/img/Pivo3.png" alt="" />
+          </div>
+
+        </div>
       </div>
+
 
       <div class="container2">
         <video style="width: -webkit-fill-available" autoplay muted loop id="myVideo">
@@ -277,12 +306,18 @@
             кажому новому партнеру от Понарт
           </h1>
           <div class="form_four">
-            <form>
-              <input type="text" id="name" name="name" placeholder="Ваше имя" class="input_forma_four_page" required />
+            <form id="stat_partner">
+              <div class="form-group">
+                <input type="text" id="userName" name="userName" placeholder=" " required />
+                <label for="userName">Ваше имя</label>
+              </div>
 
-              <input type="tel" id="phone" name="phone" placeholder="Контактный номер телефона" required />
+              <div class="form-group">
+                <input type="tel" id="phoneNumber" maxlength="11" name="phoneNumber" placeholder=" " required />
+                <label for="phoneNumber">Ваш номер телефона</label>
+              </div>
 
-              <button class="learn-more" type="submit" disabled>
+              <button class="learn-more" type="submit" disabled style="margin-top: 32px; width: 250px;">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>
                 </span>
@@ -302,90 +337,29 @@
 
             <div class="poisk">
               <div class="text_five">
-                <h3 class="text">МЫ В ПОИСКЕ ПАРТНЕРОВ И СОТРУДНИКОВ</h3>
+                <h3 class="text">МЫ В ПОИСКЕ СОТРУДНИКОВ</h3>
               </div>
 
               <img class="man" src="../img/bREWING.png" alt="" />
             </div>
           </div>
 
-
-          <div class="swiper mySwiper2" style="height: 400px;">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide huyna">
-                <div class="container_img">
-                  <div class="work">
-                    <div class="background">
-                      <h2 class="white">название</h2>
-                      <p class="white">
-                        описание
-                      </p>
-                    </div>
-                    <form action="">
-                      <input type="text" placeholder="Фамилия Имя Отчество" />
-                      <input type="text" placeholder="Ваш номер телефона" />
-                      <button class="learn-more" type="submit" disabled>
-                        <span class="circle" aria-hidden="true">
-                          <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">Откликнуться</span>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide huyna">
-                <div class="container_img">
-                  <div class="work">
-                    <div class="background">
-                      <h2 class="white">название</h2>
-                      <p class="white">
-                        описание
-                      </p>
-                    </div>
-                    <form action="">
-                      <input type="text" placeholder="Фамилия Имя Отчество" />
-                      <input type="text" placeholder="Ваш номер телефона" />
-                      <button class="learn-more" type="submit" disabled>
-                        <span class="circle" aria-hidden="true">
-                          <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">Откликнуться</span>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide huyna">
-                <div class="container_img">
-                  <div class="work">
-                    <div class="background">
-                      <h2 class="white">название</h2>
-                      <p class="white">
-                        описание
-                      </p>
-                    </div>
-                    <form action="">
-                      <input type="text" placeholder="Фамилия Имя Отчество" />
-                      <input type="text" placeholder="Ваш номер телефона" />
-                      <button class="learn-more" type="submit" disabled>
-                        <span class="circle" aria-hidden="true">
-                          <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">Откликнуться</span>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+          <div class="texter">
+            <h2 class="text">
+              СТАНЬ ЧАСТЬЮ <br>НОВОЙ ИСТОРИИ
+            </h2>
           </div>
 
-
+          <div class="mark">
+            <div class="buy_action">
+              <button class="learn-more" type="submit" disabled>
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text" style="color: white;">Купить Акцию</span>
+              </button>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -409,25 +383,29 @@
         <div class="content_six_page">
           <h2 class="texter_six">ПОНАРТ <br />НА КАРТЕ</h2>
 
-          <div style="position: relative; overflow: hidden">
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A69e7963fbd932471d4fe17d380227c9a9764eb17e7f5c0f0f24f227e3959a1ba&amp;source=constructor"
-              width="100%" height="720" frameborder="0"></iframe>
+          <div style="position: relative; overflow: hidden; border-top: 2px solid #d3d3d3;
+          padding-top: 40px;">
+            <div class="map-container">
+              <iframe class="map"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A69e7963fbd932471d4fe17d380227c9a9764eb17e7f5c0f0f24f227e3959a1ba&amp;source=constructor"
+                frameborder="0"></iframe>
+              <div class="map-overlay" onclick="activateMap()">Нажмите чтобы увидеть карту</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="right_menu">
-      <div class="element_menu">
-        <button id="themeToggle" class="night_light_mode"></button>
+      <div class="container_menu" style="position: sticky; top: 96px; margin: 0 auto;">
+        <!-- <button id="themeToggle" class="night_light_mode"></button> -->
+        <input id="themeToggle" type="checkbox" role="switch" class="toggle" />
         <script src="components/right menu/RightMenu.js"></script>
+        <button class="expand_less" onclick="scrollToTop()"></button>
       </div>
-
-      <button class="expand_less" onclick="scrollToTop()"></button>
     </div>
   </div>
-
+  
   <footer>
     <div class="all_items_footer">
       <div class="logo_footer"></div>
@@ -448,11 +426,13 @@
         <a class="footerButton" href="#partner">Партнерам</a>
         <a class="footerButton" href="">Хочу в команду</a>
         <a class="footerButton" href="#excursion">Экскурсии</a>
-        <a class="footerButton" href="">СДЕЛАНО КОМАНДОЙ "PRACTICE"</a>
+        <!-- <a class="footerButton" href="">СДЕЛАНО КОМАНДОЙ "PRACTICE"</a> -->
       </div>
+      <div class="practice"></div>
+
     </div>
   </footer>
-
+  <button class="menu_toggle" onclick="toggleMenu()">☰</button>
   <div id="wrapper_vk_post" style="
         width: 100vw;
         height: 100vh;
@@ -480,7 +460,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
-  <script src="components/content/Verify.js"></script>
+  <!-- <script src="components/content/Verify.js"></script> -->
   <script src="components/content/Content.js"></script>
   <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -496,6 +476,19 @@
   <script src="components/content/HiddenText.js"></script>
   <script src="components/content/HiddenBlock.js"></script>
   <script src="components/FONTS/Text.js"></script>
+  <script src="components/content/ZoomImg.js"></script>
+  <script src="components/content/map.js"></script>
+  <script>
+    function toggleMenu() {
+      const header = document.querySelector('header');
+      const rightMenu = document.querySelector('.right_menu');
+      const content = document.querySelector('.content');
+
+      header.classList.toggle('show');
+      rightMenu.classList.toggle('show');
+      content.classList.toggle('show');
+    }
+  </script>
 </body>
 
 </html>

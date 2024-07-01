@@ -34,10 +34,10 @@
 </head>
 
 <body>
-  <audio id="myAudio" style="position: fixed; width: 40px; height: 40px;">
+  <!-- <audio id="myAudio" style="position: fixed; width: 40px; height: 40px;">
     <source src="../1й абзац.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-  </audio>
+  </audio> -->
   <header>
     <!-- кнопка -->
     <a class="circle" id="menu-toggle">
@@ -74,7 +74,7 @@
   <div class="content_wrapper">
 
     <div>
-      <!-- добавил плеер -->
+      <!-- добавил плеер
       <div class="aWrap" data-src="../1й абзац.mp3">
         <button class="aPlay" disabled><span class="aPlayIco"><i class="fa fa-play"></i></span></button>
         <div style="display: flex; align-items: center;">
@@ -95,8 +95,8 @@
               class="change-range"></span>
           </div>
         </div>
-      </div>
-      <!-- конец плеера -->
+      </div> -->
+      
       <div class="text">
         <h2>Крупнейшей пивоваренной компанией в довоенной Восточной Пруссии был кёнигсбергский пивзавод
           «Понарт»,
@@ -333,7 +333,7 @@
       <h2 class="text"> Для устранения дефицита жилья в 1871 году было построено два жилых дома общим объёмом в 32
         квартиры.</h2>
 
-      <img src="img/image (42).jpeg" style="margin: 0 auto;">
+      <img src="img/image (42).jpeg" class="info_img">
     </div>
 
 
@@ -421,13 +421,13 @@
 
 
     <div class="info">
-      <img src="img/image (11).jpeg" alt="">
+      <img src="img/image (11).jpeg" class="info_img" alt="">
 
-      <h1 class="text">
+      <h2 class="text">
         В юбилейном 1939 году пивоварня со штатом 500 человек была крупнейшей в северо-восточной Германии. В 1906 году в
         честь основателя знаменитой пивоварни в Понарте назвали улицу (сейчас ул. маршала Новикова).
 
-      </h1>
+      </h2>
     </div>
 
 
@@ -473,10 +473,10 @@
 
     <div class="block_text">
 
-      <h2 class="text_line">
+      <h1 class="text_line">
         НОВЫЕ ХОЗЯЕВА -
         СОВЕТСКИЙ ПЕРИОД
-      </h2>
+      </h1>
 
     </div>
 
@@ -512,9 +512,15 @@
       СОХРАНЯЯ СТАРИННЫЕ ТРАДИЦИИ ПИВОВАРЕНИЯ
     </h1>
 
-
-    <div class="block_img">
-      <img src="img/image (16).jpeg" alt="">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/image (16).jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/image (17).jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/image (18).jpeg" alt=""></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <div class="text">

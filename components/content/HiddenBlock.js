@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Функция для отслеживания события прокрутки и активации таймера, когда блок появляется в зоне видимости
     function handleScroll() {
       if (isElementInViewport(block)) {
-        setTimeout(showBlock, 5000); // Активируем таймер при появлении блока в зоне видимости
+        setTimeout(showBlock, 2000); // Активируем таймер при появлении блока в зоне видимости
         window.removeEventListener('scroll', handleScroll); // Отписываемся от события прокрутки после активации таймера
       }
     }
