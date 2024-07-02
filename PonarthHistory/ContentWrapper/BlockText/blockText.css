@@ -76,6 +76,16 @@ color: #030303;
   line-height: 62px;
   font-weight: normal;
  }
+ h3{
+  color: #030303;
+  font-size: 100px;
+  font-family: "Roboto";
+  line-height: 62px;
+  font-weight: bold;
+ }
+ .block_yers{
+  display: flex;
+ }
  @media only screen and (max-width: 1025px) {
   h2{
     font-size: 20px; /* Уменьшаем размер шрифта на мобильных устройствах */
